@@ -6,6 +6,7 @@ cc_test(
     deps = [
         "//src/lib:CPPLib",
         "//src/lib/sort:SortLib",
+        "//src/lib/search:SearchLib",
         "@googletest//:gtest_main",
     ],
 )

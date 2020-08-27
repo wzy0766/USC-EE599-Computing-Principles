@@ -1,7 +1,28 @@
 #include "cpplib.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
 
 #include "limits"
 std::string CPPLib::PrintHelloWorld() { return "**** Hello World ****"; }
+std::string CPPLib::PrintIntro() { 
+   string line;
+   ifstream myfile ("/home/student/EE599/pizza.txt");
+   if (myfile.is_open())
+   {
+     while ( getline (myfile,line))
+    {
+     cout<< line << '\n';
+    }
+   }
+   return "**** Self-Introduction ****\n"
+            "Name: Zeyu Wang\n"
+            "Major: EE\n"
+            "Hooby: Chicken-Fill-A";
+   }
+
 
 // Calculates the Nth Fibonacci number
 int CPPLib::fib(int N) {
