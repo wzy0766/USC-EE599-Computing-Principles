@@ -17,7 +17,7 @@ std::string CPPLib::PrintIntro() {
      cout<< line << '\n';
     }
    }
-   return "**** Self-Introduction ****\n"
+      return "**** Self-Introduction ****\n"
             "Name: Zeyu Wang\n"
             "Major: EE\n"
             "Hooby: Chicken-Fill-A";
