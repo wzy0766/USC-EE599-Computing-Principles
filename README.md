@@ -1,1 +1,1 @@
-E599_Lab1
+USC EE599 Computing Principles for Electrical Engineers
