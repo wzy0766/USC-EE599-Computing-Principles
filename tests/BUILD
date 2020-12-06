@@ -4,27 +4,37 @@ cc_test(
     name = "tests",
     srcs = glob(["**/*.cc"]),
     deps = [
-        "//src/lib:CPPLib",
-        "//src/lib/sort:SortLib",
-        "//src/lib/search:SearchLib",
+        "//src/lib:TrojanMap",
         "@googletest//:gtest_main",
     ],
+    timeout="long",
 )
 
 cc_test(
-    name = "sort_test",
-    srcs = ["sort_test.cc"],
+    name = "trojanmap_test",
+    srcs = ["trojanmap_test.cc"],
     deps = [
-        "//src/lib/sort:SortLib",
+        "//src/lib:TrojanMap",
         "@googletest//:gtest_main",
     ],
+    timeout="long",
 )
 
 cc_test(
-    name = "search_test",
-    srcs = ["search_test.cc"],
+    name = "trojanmap_test_student",
+    srcs = ["trojanmap_test_student.cc"],
     deps = [
-        "//src/lib/search:SearchLib",
+        "//src/lib:TrojanMap",
+        "@googletest//:gtest_main",
+    ],
+    timeout="long",
+)
+
+cc_test(
+    name = "trojanmap_test_grader",
+    srcs = ["trojanmap_test_grader.cc"],
+    deps = [
+        "//src/lib:TrojanMap",
         "@googletest//:gtest_main",
     ],
 )

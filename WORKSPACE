@@ -24,15 +24,15 @@ git_repository(
     tag = "v1.5.1",
 )
 
-new_local_repository(
-    name = "usr_local",
-    build_file = "third_party/usr_local.BUILD",
-    path = "/usr/local",
-)
-
 
 git_repository(
     name = "com_github_gflags_gflags",
     remote = "https://github.com/gflags/gflags.git",
     tag = "v2.2.2",
+)
+
+new_local_repository(
+	name = "opencv",
+	path = "opencv/install",
+	build_file = "opencv.BUILD",
 )

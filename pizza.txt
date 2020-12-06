@@ -1,4 +1,0 @@
-"**** Self-Introduction ****\n"
-"Name: Zeyu Wang\n"
-"Major: ECE\n"
-"Hooby: Chicken-fill-A\n";
