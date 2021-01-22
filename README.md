@@ -38,10 +38,8 @@ All types of navigation information are stored in a mapped fashion that provides
     
     If we’ve already known the key of a certain value on the map, we can easily look up the certain value that we want to extract with average time complexity of O(log(n)), for example:
     * **data[id].lat** // Access latitude data of current id
-    * **data[id].name
-data[id].neighbors** // Access name data of current id
-    * **data[id].name
-data[id].neighbors** // Access neighbors of current id
+    * **data[id].name** // Access name data of current id
+    * **data[id].neighbors** // Access neighbors of current id
        
 * **Sorted Order** 
     
