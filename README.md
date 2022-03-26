@@ -110,7 +110,7 @@ Functionalities of the program will be tested via [GTest](https://github.com/goo
 
 Please run:
 ```shell
-bazel test tests::tests
+bazel test tests:tests
 ```
 <p align="center"><img src="img/GTEST.gif" alt="GTest_Demo" width="500" /></p>
 
