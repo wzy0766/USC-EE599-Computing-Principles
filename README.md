@@ -66,7 +66,7 @@ git clone https://github.com/ee599-20203/final-project-wzy0766.git
 cd final-project-wzy0766/
 ```
 ### OpenCV Installation
-For visualizations, I used [OpenCV](https://github.com/opencv/) library as a black box on Ubuntu.
+For visualizations, I used [OpenCV](https://github.com/opencv/) and [Xming](https://sourceforge.net/projects/xming/) library as a black box on WSL Ubuntu.
 
 Use the following commands to install OpenCV.
 
@@ -97,6 +97,7 @@ make install
 Please run:
 
 ```shell
+export DISPLAY=:0
 bazel run src/main:main
 ```
 
